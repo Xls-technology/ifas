@@ -13,7 +13,7 @@ public class vendor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "AuditPatchesId")
+    @Column(name = "VendorId")
     private Long vendorId;
 
     @Column(name = "VendorCode")
@@ -44,11 +44,23 @@ public class vendor {
     @Column(name = "uploadPath")
     private String uploadPath;
 
-
-    @Column(name = "PatchDate")
-    private LocalDateTime patchDate;
-
     @Column(name = "CreatedDate")
     private LocalDateTime createdDate;
+
+    @Column(name = "CreatedBy")
+    private String createdBy;
+
+    @Column(name = "ModifiedBy")
+    private String ModifiedBy;
+
+    @Column(name = "ModifiedDate")
+    private LocalDateTime ModifiedDate;
+
+
+    @Column(name = "IsActive")
+    private LocalDateTime IsActive;
+
+
+
 
 }
